@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: auto;
+    background-color: #b0b0b0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 0;
+
+    overflow: hidden;
+
+    background-color: #484848;
+    width: 100%;
+
+    padding: 10px 20px 10px 20px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+}
+
+nav > a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+nav > h3 {
+    display: none;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro {
+    width: 100%;
+    background-color: #a8a8a8;
+}
+
+.project-listing {
+    width: 80%;
+    height: auto;
+}
+
+.jujakide {
+    background-color: grey;
+}
