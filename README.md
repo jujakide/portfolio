@@ -1,1 +1,1 @@
-# jujakide.github.io
+# jujakide.com
