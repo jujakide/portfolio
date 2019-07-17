@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/* Mobile Styling */
+@media screen and (max-width: 470px) {
+    .intro {
+        font-size: 30px;
+    }
+}
+
 header {
     display: flex;
     height: auto;
@@ -21,21 +28,23 @@ nav {
 
     background-color: #484848;
     width: 100%;
+    height: auto;
 
     padding: 10px 20px 10px 20px;
 }
 
 nav > a {
     color: white;
+    font-size: 60px;
     text-decoration: none;
-}
-
-nav > a:visited {
-    color: white;
 }
 
 nav a:hover {
     color: orange;
+}
+
+nav > a:visited {
+    color: white;
 }
 
 nav > h3 {
@@ -53,8 +62,11 @@ nav > h3 {
 }
 
 .project-listing {
-    width: 80%;
-    height: auto;
+    
+}
+
+.project {
+    width: 100%;
 }
 
 .jujakide {
