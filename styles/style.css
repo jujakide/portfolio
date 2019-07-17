@@ -5,7 +5,7 @@
 }
 
 body {
-    font-size: 1em;
+    font-size: 1rem;
     font-family: "NanumGothic";
     /* background-color: #6c5ce7; */
     color: #2d3436;
@@ -15,7 +15,7 @@ body {
 /* Mobile Styling */
 @media screen and (max-width: 470px) {
     body {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     nav > h3 {
@@ -66,16 +66,12 @@ a:hover {
 .page {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 
 h1, h2, h3, p {
     margin-bottom: 0.5em;
 }
-
-/* p {
-    width: 70%;
-} */
 
 .intro {
     width: 100%;
@@ -124,13 +120,18 @@ h1, h2, h3, p {
 
 .contact {
     margin-bottom: 3em;
-    text-align: center;
 }
 
 .contact > ul > li {
     list-style: none;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 1.5em;
 }
+
