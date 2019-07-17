@@ -93,6 +93,8 @@ img {
     margin-right: auto;
 
     padding: 5px;
+    border-radius: 15px;
+
 }
 
 figcaption {
@@ -105,13 +107,16 @@ figcaption {
     display: block;
 }
 
-.container:last-of-type > p:last-of-type,
-.contact,
+/* .container:last-of-type > p:last-of-type, */
+/* .contact, */
 .under-construction,
 .final {
     margin-bottom: 5em;
 }
 
+.connect {
+    margin-bottom: 1em;
+}
 
 
 /* Nav Styles */
