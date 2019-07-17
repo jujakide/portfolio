@@ -4,17 +4,29 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 1em;
+    font-family: "NanumGothic";
+    /* background-color: #6c5ce7; */
+    color: #2d3436;
+    line-height: 1.5em;
+}
+
 /* Mobile Styling */
 @media screen and (max-width: 470px) {
-    .intro {
-        font-size: 30px;
+    body {
+        font-size: 1.5em;
+    }
+
+    nav > h3 {
+        display: none;
     }
 }
 
 header {
     display: flex;
     height: auto;
-    background-color: #b0b0b0;
+    /* background-color: #b0b0b0; */
 }
 
 nav {
@@ -26,49 +38,99 @@ nav {
 
     overflow: hidden;
 
-    background-color: #484848;
     width: 100%;
     height: auto;
+
+    background-color: #2d3436;
 
     padding: 10px 20px 10px 20px;
 }
 
-nav > a {
-    color: white;
-    font-size: 60px;
+a {
+    color: #00b894;
     text-decoration: none;
 }
 
-nav a:hover {
-    color: orange;
+nav > a {
+    font-size: 1em;
 }
 
-nav > a:visited {
-    color: white;
+a:visited {
+    color: #00b894;
 }
 
-nav > h3 {
-    display: none;
+a:hover {
+    color: #55efc4;
 }
 
 .page {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 40px;
 }
+
+h1, h2, h3, p {
+    margin-bottom: 0.5em;
+}
+
+/* p {
+    width: 70%;
+} */
 
 .intro {
     width: 100%;
-    background-color: #a8a8a8;
+    /* background-color: #a8a8a8; */
+    margin-bottom: 1.5em;
 }
 
-.project-listing {
-    
+.intro > h1{
+    margin-top: 0.5em;
 }
 
-.project {
+.project, .writing-group {
     width: 100%;
+    margin-bottom: 1.5em;
+}
+
+
+/* Design Styles */
+
+.under-construction {
+    margin-bottom: 3em;
 }
 
 .jujakide {
     background-color: grey;
+}
+
+
+/* Writing Styles */
+
+.writing {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.writing:last-of-type {
+    margin-bottom: 0;
+}
+
+.writing-group:last-of-type {
+    margin-bottom: 3em;
+}
+
+
+/* About Styles */
+
+.contact {
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.contact > ul > li {
+    list-style: none;
+}
+
+img {
+    margin-bottom: 1.5em;
 }

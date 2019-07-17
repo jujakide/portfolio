@@ -1,0 +1,25 @@
+.page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    background-color: #5995DA;
+  }
+  
+  .header {
+    background-color: #B2D6FF;
+  }
+  
+  .content {
+    background-color: #EAEDF0;
+    height: 600px;
+  }
