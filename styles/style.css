@@ -7,15 +7,21 @@
 
 body {
     font-size: 1em;
-    font-family: "NanumGothic";
+    /* Add in a @font-face declaration? */
+    font-family: "Fira Sans", sans-serif; /* Add in another font for index numbers? */
     color: #2d3436;
-    line-height: 1.5em;
+    line-height: 1.35;
+    
+    counter-reset: index;
 }
 
+h1, h2, h3, h4 {
+    line-height: 1.2;
+}
 
 /* Mobile Styling */
-@media screen and (max-width: 470px) {
-    nav > h3 {
+@media screen and (max-width: 426px) {
+    .logo {
         display: none;
     }
 }
@@ -63,22 +69,30 @@ a:hover {
     padding: 0 30px;
 }
 
+li {
+    list-style: none;
+    font-size: 0.9em;
+}
 
-h1, h2, h3, p, li, a, img, figcaption {
+h1, h2, h3, h4, h5, li, .below-link {
+    margin-bottom: 0.2em;
+}
+
+p, figure, .demo, ul {
     margin-bottom: 0.5em;
 }
 
-.container > h1 {
+main, article, section {
+    margin-bottom: 0.75em;
+}
+
+.hierarchy::before {
+    counter-increment: index;
+    content: counter(index) ". ";
+}
+
+.page-top {
     margin-top: 0.5em;
-}
-
-ul > li {
-    list-style: none;
-}
-
-.container{
-    width: 100%;
-    margin-bottom: 1.5em;
 }
 
 
@@ -99,19 +113,23 @@ img {
 
 figcaption {
     font-size: 0.9em;
+
+    padding: 10px;
     
-    text-align: center;
+
+    background: #f0f0f0;
+
+    border-radius: 15px;
 }
 
 .demo {
     display: block;
+
+    font-size: 1em;
 }
 
-/* .container:last-of-type > p:last-of-type, */
-/* .contact, */
-.under-construction,
 .final {
-    margin-bottom: 5em;
+    margin-bottom: 4em;
 }
 
 .connect {
@@ -121,16 +139,18 @@ figcaption {
 
 /* Nav Styles */
 
-nav > a {
+.nav-link {
     font-size: 1em;
+
+    margin-bottom: 0;
+    padding: 0.5em;
+    list-style: none;
 }
 
 
 /* About Styles */
 
-.contact > ul > li {
-    list-style: none;
+.contact-links {
     text-align: center;
-    margin-bottom: 1em;
 }
 
