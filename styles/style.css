@@ -1,3 +1,4 @@
+/* Default // Mobile Styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,25 +8,26 @@
 
 body {
     font-size: 1em;
-    /* Add in a @font-face declaration? */
-    font-family: "Fira Sans", sans-serif; /* Add in another font for index numbers? */
+    font-family: "Fira Sans", "Roboto", sans-serif;
+    /* Anonymous Pro, Inconsolata??? */
+    /* Fira Mono tho */
     color: #2d3436;
     line-height: 1.35;
     
     counter-reset: index;
+    /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
+
+    background-color: #fafafa;
 }
+
+.logo {
+    display: none;
+}
+
 
 h1, h2, h3, h4 {
     line-height: 1.2;
 }
-
-/* Mobile Styling */
-@media screen and (max-width: 426px) {
-    .logo {
-        display: none;
-    }
-}
-
 
 header {
     display: flex;
@@ -37,7 +39,6 @@ nav {
     justify-content: space-between;
 
     position: fixed;
-    bottom: 0;
     overflow: hidden;
 
     width: 100%;
@@ -66,7 +67,10 @@ a:hover {
 .page {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30px;
+    flex-direction: column;
+    
+    width: 85vw;
+    margin: 0 auto;
 }
 
 li {
@@ -78,21 +82,23 @@ h1, h2, h3, h4, h5, li, .below-link {
     margin-bottom: 0.2em;
 }
 
-p, figure, .demo, ul {
+p, figure, ul {
+    flex-wrap: wrap;
     margin-bottom: 0.5em;
 }
 
 main, article, section {
+    flex-wrap: wrap;
     margin-bottom: 0.75em;
 }
 
+/* For numbering */
 .hierarchy::before {
     counter-increment: index;
     content: counter(index) ". ";
-}
+    font-size: 0.8em;
 
-.page-top {
-    margin-top: 0.5em;
+    font-family: "Open Sans", sans-serif;
 }
 
 
@@ -107,19 +113,17 @@ img {
     margin-right: auto;
 
     padding: 5px;
-    border-radius: 15px;
-
+    border-radius: 1em;
 }
 
 figcaption {
     font-size: 0.9em;
 
-    padding: 10px;
+    padding: 0.5em 0 0.4em 1em;
     
-
     background: #f0f0f0;
 
-    border-radius: 15px;
+    border-radius: 0.7em;
 }
 
 .demo {
@@ -128,9 +132,6 @@ figcaption {
     font-size: 1em;
 }
 
-.final {
-    margin-bottom: 4em;
-}
 
 .connect {
     margin-bottom: 1em;
@@ -154,3 +155,100 @@ figcaption {
     text-align: center;
 }
 
+
+/* Very Mobile Specific Styling */
+@media screen and (max-width: 426px) {
+    nav {
+        bottom: 0;
+    }
+
+    .final {
+        margin-bottom: 5em;
+    }
+
+    .page-top {
+        margin-top: 0.5em;
+    }
+}
+
+
+/* General Styling Tablet and Up */
+@media screen and (min-width: 426px) {
+    .logo {
+        display: inline;
+    }
+
+    .final {
+        margin-bottom: 3vw;
+    }
+}
+
+/* Tablet Styling */
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    .page {
+        width: 70vw;
+    }
+
+    .page-top {
+        margin-top: 2.5em;
+    }
+}
+
+
+/* General Styling Laptop (Regular) and Up */
+@media screen and (min-width: 770px) {
+    body {
+        font-size: 1.5vw;
+    }
+    
+    .logo {
+        display: inline;
+    }
+
+    nav {
+        width: 20vw;
+        height: 100%;
+
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        overflow-x: hidden;
+
+        padding: 5vw;
+        padding-top: 3vw;
+
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .page-top {
+        margin-top: 3vw;
+    }
+
+    .page {
+        width: 50vw;
+        margin-left: 35vw;
+    }
+
+    .final {
+        margin-bottom: 3vw;
+    }
+}
+
+/* Laptop Styling */
+ @media screen and (min-width: 770px) and (max-width: 1024px) {
+
+ }
+
+ /* Laptop Large Styling */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+/* 4K Styling */
+@media screen and (min-width: 1441px) {
+/* @media screen and (min-width: 1025px) { */
+
+}
