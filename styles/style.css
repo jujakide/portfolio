@@ -75,7 +75,7 @@ a:hover {
 
 li {
     list-style: none;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 h1, h2, h3, h4, h5, li, .below-link {
@@ -89,7 +89,11 @@ p, figure, ul {
 
 main, article, section {
     flex-wrap: wrap;
-    margin-bottom: 0.75em;
+    margin-bottom: 1em;
+}
+
+.brief {
+    margin-bottom: 1.5vw;
 }
 
 /* For numbering */
@@ -117,7 +121,7 @@ img {
 }
 
 figcaption {
-    font-size: 0.9em;
+    font-size: 0.8em;
 
     padding: 0.5em 0 0.4em 1em;
     
@@ -135,6 +139,16 @@ figcaption {
 
 .connect {
     margin-bottom: 1em;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    color: grey;
+    margin: 0 auto;
+    margin-top: 1vw;
 }
 
 
@@ -162,7 +176,8 @@ figcaption {
         bottom: 0;
     }
 
-    .final {
+    /* .final { */
+    footer {
         margin-bottom: 5em;
     }
 
@@ -178,7 +193,8 @@ figcaption {
         display: inline;
     }
 
-    .final {
+    /* .final { */
+    footer {
         margin-bottom: 3vw;
     }
 }
@@ -232,7 +248,8 @@ figcaption {
         margin-left: 35vw;
     }
 
-    .final {
+    /* .final { */
+    footer {
         margin-bottom: 3vw;
     }
 }

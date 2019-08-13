@@ -34,20 +34,31 @@
                 <p>
                     Recently graduated from UCSD for cognitive science and ready to start working full-time opportunities, especially in <strong>game development</strong>. 
                 </p>
-                <h3>portfolio v.0.1.3</h3>
+                <h3>portfolio v.1.0.0</h3>
             </main>
 
             <article>
                 <h3 class="hierarchy"><a href="./projects/diabeatit.html">UCSD Global Ties: Diabeatit</a></h3>
                 <figure>
                     <a href="./projects/diabeatit.html">
-                        <img src="./images/diabeatit-pics/homescreen.png" alt="diabeatit screenshot"/>
+                        <img src="./images/diabeatit-pics/homescreen-small.png" 
+
+                        srcset="
+                        images/diabeatit-pics/homescreen-small.png 350w,
+                        images/diabeatit-pics/homescreen-medium.png 512w,
+                        images/diabeatit-pics/homescreen-big.png 1024w"
+
+                        sizes="(max-wdith: 425px) 350px,
+                               (max-width: 769px) 512px,
+                               1024px"
+
+                        alt="diabeatit screenshot"/>
                     </a>
                 </figure>
                 <p>
                     Diabeatit is an educational health game tablet app aiming to teach children about diabetes.
                 </p>
-                <h4>UX and UI Design, Game Development</h4>
+                <li class="brief">UX and UI Design, Game Development</li>
             </article>
 
             <article>
@@ -60,7 +71,7 @@
                 <p>
                     Power Trip UCSD is a satirical interactive fiction (IF) game about abusing your power as UCSD&rsquo;s latest chancellor.
                 </p>
-                <h4>UI Coding, UX Design, Game Development</h4>
+                <li class="brief">UI Coding, UX Design, Game Development</li>
             </article>
 
             <article>
@@ -73,7 +84,7 @@
                 <p>
                     FeetFit is a point of purchase (POP) shoe kiosk made for UCSD&rsquo;s Prototyping studio that aims to accurately measure users&rsquo; feet and quickly deliver the right shoes.
                 </p>
-                <h4>UX and Graphic Design</h4>
+                <li class="brief">UX and Graphic Design</li>
             </article>
 
             <article>
@@ -86,7 +97,7 @@
                 <p>
                     The Buddy Book is a handbook for helping K&ndash;12 refugee students in San Diego integrate into American life by giving a list of fun and helpful activities they can do together.
                 </p>
-                <h4>UX and Graphic Design</h4>
+                <li class="brief">UX and Graphic Design</li>
             </article>
 
             <article>
@@ -99,7 +110,7 @@
                 <p>
                     Come Together is an app for community empowerment via crowd-sourcing that addresses difficulties with fixing problems in local neighborhoods.
                 </p>
-                <h4>UX and UI Design</h4>
+                <li class="brief">UX and UI Design</li>
             </article>
 
             <article class="final">
@@ -107,8 +118,14 @@
                 <p>
                     Currently under construction! 🙇
                 </p>
-                <h4>UX Design</h4>
-            </article> 
+                <li class="brief">UX Design</li>
+            </article>
+            
+            <footer>
+                <p>
+                    Manually assembled by Justin J. Kim to summon <strike>Eldritch gods</strike> jobs.
+                </p>
+            </footer>
         </div>
     </body>
 </html>
