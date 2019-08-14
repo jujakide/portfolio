@@ -46,7 +46,8 @@ nav {
 
     background-color: #2d3436;
 
-    padding: 10px 20px 10px 20px;
+    padding: 1.5vw 3vw;
+    /* padding: 10px 20px; */
 }
 
 
@@ -107,7 +108,7 @@ main, article, section {
 
 
 figure {
-    margin: 10px 0 10px 0;
+    margin: 1.5vw 0;
 }
 
 img {
@@ -116,7 +117,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 
-    padding: 5px;
+    margin-bottom: 1vw;
     border-radius: 1em;
 }
 
