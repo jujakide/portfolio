@@ -1,3 +1,12 @@
+/* Colors
+#76b9ff
+#c9f
+#fea
+#3c3c3c
+#f0f0f0
+#dfddff
+*/
+
 /* Default // Mobile Styling */
 * {
     margin: 0;
@@ -11,13 +20,13 @@ body {
     font-family: "Fira Sans", "Roboto", sans-serif;
     /* Anonymous Pro, Inconsolata??? */
     /* Fira Mono tho */
-    color: #2d3436;
+    color: #303030;
     line-height: 1.35;
     
     counter-reset: index;
     /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
 
-    background-color: #fafafa;
+    background-color: #76b9ff;
 }
 
 .logo {
@@ -44,24 +53,20 @@ nav {
     width: 100%;
     height: auto;
 
-    background-color: #2d3436;
+    background-color: #897fff;
 
     padding: 1.5vw 3vw;
     /* padding: 10px 20px; */
 }
 
 
-a {
-    color: #00b894;
+a, a:visited {
+    color: #6bffce;
     text-decoration: none;
 }
 
-a:visited {
-    color: #00b894;
-}
-
 a:hover {
-    color: #55efc4;
+    color: #10fcaf;
 }
 
 
@@ -81,6 +86,10 @@ li {
 
 h1, h2, h3, h4, h5, li, .below-link {
     margin-bottom: 0.2em;
+}
+
+.below-link {
+    margin-top: 0.4em;
 }
 
 p, figure, ul {
@@ -124,17 +133,21 @@ img {
 figcaption {
     font-size: 0.8em;
 
-    padding: 0.5em 0 0.4em 1em;
+    padding: 0.5em 1em 0.4em 1em;
     
-    background: #f0f0f0;
+    background-color: #665aff;
 
     border-radius: 0.7em;
+
+    color: #dfddff;
 }
 
 .demo {
     display: block;
 
     font-size: 1em;
+
+    /* text-align: center; */
 }
 
 
@@ -168,6 +181,12 @@ footer {
 
 .contact-links {
     text-align: center;
+
+    padding: 0.5em 0 0.4em 1em;
+    
+    background-color: #665aff;
+
+    border-radius: 0.7em;
 }
 
 
@@ -178,7 +197,7 @@ footer {
     }
 
     /* .final { */
-    footer {
+    footer, .final {
         margin-bottom: 5em;
     }
 
@@ -195,7 +214,7 @@ footer {
     }
 
     /* .final { */
-    footer {
+    footer, .final {
         margin-bottom: 3vw;
     }
 }
@@ -245,12 +264,12 @@ footer {
     }
 
     .page {
-        width: 50vw;
-        margin-left: 35vw;
+        width: 35vw;
+        margin-left: 37vw;
     }
 
     /* .final { */
-    footer {
+    footer, .final {
         margin-bottom: 3vw;
     }
 }
@@ -263,7 +282,6 @@ footer {
  /* Laptop Large Styling */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
 
-}
 
 /* 4K Styling */
 @media screen and (min-width: 1441px) {

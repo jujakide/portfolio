@@ -1,0 +1,281 @@
+/* Colors
+#646464
+#505050
+#3c3c3c
+#141414
+#f0f0f0
+
+*/
+
+/* Default // Mobile Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 1em;
+    font-family: "Fira Sans", "Roboto", sans-serif;
+    /* Anonymous Pro, Inconsolata??? */
+    /* Fira Mono tho */
+    color: #2d3436;
+    line-height: 1.35;
+    
+    counter-reset: index;
+    /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
+
+    background-color: #fafafa;
+}
+
+.logo {
+    display: none;
+}
+
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+}
+
+header {
+    display: flex;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    overflow: hidden;
+
+    width: 100%;
+    height: auto;
+
+    background-color: #2d3436;
+
+    padding: 1.5vw 3vw;
+    /* padding: 10px 20px; */
+}
+
+
+a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00b894;
+}
+
+a:hover {
+    color: #55efc4;
+}
+
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    width: 85vw;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+    font-size: 0.8em;
+}
+
+h1, h2, h3, h4, h5, li, .below-link {
+    margin-bottom: 0.2em;
+}
+
+p, figure, ul {
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+}
+
+main, article, section {
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.brief {
+    margin-bottom: 1.5vw;
+}
+
+/* For numbering */
+.hierarchy::before {
+    counter-increment: index;
+    content: counter(index) ". ";
+    font-size: 0.8em;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+
+figure {
+    margin: 1.5vw 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 1vw;
+    border-radius: 1em;
+}
+
+figcaption {
+    font-size: 0.8em;
+
+    padding: 0.5em 0 0.4em 1em;
+    
+    background: #f0f0f0;
+
+    border-radius: 0.7em;
+}
+
+.demo {
+    display: block;
+
+    font-size: 1em;
+}
+
+
+.connect {
+    margin-bottom: 1em;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    color: grey;
+    margin: 0 auto;
+    margin-top: 1vw;
+}
+
+
+/* Nav Styles */
+
+.nav-link {
+    font-size: 1em;
+
+    margin-bottom: 0;
+    padding: 0.5em;
+    list-style: none;
+}
+
+
+/* About Styles */
+
+.contact-links {
+    text-align: center;
+}
+
+
+/* Very Mobile Specific Styling */
+@media screen and (max-width: 426px) {
+    nav {
+        bottom: 0;
+    }
+
+    /* .final { */
+    footer {
+        margin-bottom: 5em;
+    }
+
+    .page-top {
+        margin-top: 0.5em;
+    }
+}
+
+
+/* General Styling Tablet and Up */
+@media screen and (min-width: 426px) {
+    .logo {
+        display: inline;
+    }
+
+    /* .final { */
+    footer {
+        margin-bottom: 3vw;
+    }
+}
+
+/* Tablet Styling */
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    .page {
+        width: 70vw;
+    }
+
+    .page-top {
+        margin-top: 2.5em;
+    }
+}
+
+
+/* General Styling Laptop (Regular) and Up */
+@media screen and (min-width: 770px) {
+    body {
+        font-size: 1.5vw;
+    }
+    
+    .logo {
+        display: inline;
+    }
+
+    nav {
+        width: 20vw;
+        height: 100%;
+
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        overflow-x: hidden;
+
+        padding: 5vw;
+        padding-top: 3vw;
+
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .page-top {
+        margin-top: 3vw;
+    }
+
+    .page {
+        width: 50vw;
+        margin-left: 35vw;
+    }
+
+    /* .final { */
+    footer {
+        margin-bottom: 3vw;
+    }
+}
+
+/* Laptop Styling */
+ @media screen and (min-width: 770px) and (max-width: 1024px) {
+
+ }
+
+ /* Laptop Large Styling */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+/* 4K Styling */
+@media screen and (min-width: 1441px) {
+/* @media screen and (min-width: 1025px) { */
+
+}
