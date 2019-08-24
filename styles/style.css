@@ -204,6 +204,11 @@ footer {
     .page-top {
         margin-top: 0.5em;
     }
+
+    /* .zoom:active {
+        transition: transform .2s;
+        transform: scale(1.7);
+    } */
 }
 
 
@@ -271,6 +276,12 @@ footer {
     /* .final { */
     footer, .final {
         margin-bottom: 3vw;
+    }
+
+    .zoom:hover {
+        transition: transform .2s;
+        transform: scale(1.7);
+        /* border: 0.1em solid #ffeab0; */
     }
 }
 
