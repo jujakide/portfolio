@@ -20,13 +20,13 @@ body {
     font-family: "Fira Sans", "Roboto", sans-serif;
     /* Anonymous Pro, Inconsolata??? */
     /* Fira Mono tho */
-    color: #303030;
+    color: #292929;
     line-height: 1.35;
     
     counter-reset: index;
     /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
 
-    background-color: #76b9ff;
+    background-color: #76b9e5;
 }
 
 .logo {
@@ -53,7 +53,7 @@ nav {
     width: 100%;
     height: auto;
 
-    background-color: #897fff;
+    background-color: #0b1b70;
 
     padding: 1.5vw 3vw;
     /* padding: 10px 20px; */
@@ -61,12 +61,12 @@ nav {
 
 
 a, a:visited {
-    color: #6bffce;
+    color: #d7fff2;
     text-decoration: none;
 }
 
 a:hover {
-    color: #10fcaf;
+    color: #99ffde;
 }
 
 
