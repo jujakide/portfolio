@@ -21,7 +21,7 @@ body {
     /* Anonymous Pro, Inconsolata??? */
     /* Fira Mono tho */
     color: #292929;
-    line-height: 1.35;
+    line-height: 1.4;
     
     counter-reset: index;
     /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
@@ -34,12 +34,12 @@ body {
 }
 
 
-h1, 
+/* h1, 
 h2, 
 h3, 
 h4 {
     line-height: 1.2;
-}
+} */
 
 header {
     display: flex;
@@ -98,9 +98,9 @@ li {
     /* font-size: 0.8em; */
 }
 
-h1, 
+/* h1, 
 h2, 
-h3, 
+h3,  */
 li, 
 .below-link {
     margin-bottom: 0.3em;
