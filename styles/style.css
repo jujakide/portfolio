@@ -21,7 +21,7 @@ body {
     /* Anonymous Pro, Inconsolata??? */
     /* Fira Mono tho */
     color: #292929;
-    line-height: 1.4;
+    line-height: 1.35;
     
     counter-reset: index;
     /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
@@ -33,12 +33,40 @@ body {
     display: none;
 }
 
+/* Default: 2em */
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img,
+figure,
+li, 
+.below-link,
+figure, 
+ul,
+main, 
+article, 
+section,
+.brief,
+.connect {
+    margin-bottom: 1em;
+}
 
-/* h1, 
-h2, 
-h3, 
-h4 {
-    line-height: 1.2;
+/* Default: 1.5em */
+/* h2 {
+    line-height: 1.5;
+} */
+
+/* Default: 1.17em */
+/* h3 {
+    line-height: 1.17;
+} */
+
+/* Default: 1.12em */
+/* h4 {
+    line-height: 1.12;
 } */
 
 header {
@@ -73,16 +101,6 @@ a:hover {
     color: #aeaef9;
 }
 
-/* li.nav-link a, 
-li.nav-link a:visited 
- {
-    color: #ffffd0;
-}
-
-li.nav-link a:hover {
-    color: #aeaef9;
-} */
-
 
 .page {
     display: flex;
@@ -95,37 +113,22 @@ li.nav-link a:hover {
 
 li {
     list-style: none;
-    /* font-size: 0.8em; */
-}
-
-/* h1, 
-h2, 
-h3,  */
-li, 
-.below-link {
-    margin-bottom: 0.3em;
 }
 
 .below-link {
-    margin-top: 0.4em;
+    margin-top: 1em;
 }
-
-p, 
+ 
 figure, 
 ul {
     flex-wrap: wrap;
-    margin-bottom: 0.5em;
 }
+
 
 main, 
 article, 
 section {
     flex-wrap: wrap;
-    margin-bottom: 1em;
-}
-
-.brief {
-    margin-bottom: 1.5vw;
 }
 
 /* For numbering */
@@ -148,7 +151,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 
-    margin-bottom: 1vw;
     border-radius: 1em;
 }
 
@@ -162,14 +164,13 @@ figcaption {
     border-radius: 0.7em;
 }
 
-
-.demo {
-    display: block;
+figcaption a {
+    margin-bottom: 0;
 }
 
 
-.connect {
-    margin-bottom: 1em;
+.demo {
+    display: block;
 }
 
 
@@ -193,6 +194,12 @@ footer {
     list-style: none;
 }
 
+li.nav-link,
+nav li,
+li.nav-link h3 {
+    margin-bottom: 0;
+}
+
 
 /* About Styles */
 
@@ -201,9 +208,13 @@ footer {
 
     padding: 0.5em 0 0.4em 1em;
     
-    background-color: #96d2f0;
+    background-color: #0b1b70;
 
     border-radius: 0.7em;
+}
+
+.contact-links li {
+    margin-bottom: 0.7em;
 }
 
 
@@ -247,10 +258,10 @@ footer {
 @media screen and (min-width: 426px) and (max-width: 769px) {
     /* body {
         font-size: 2.3vw;
-    } */
-    
+    } */    
+
     .page {
-        width: 70vw;
+        width: 65vw;
     }
 
     .page-top {
@@ -292,7 +303,7 @@ footer {
     }
 
     .page {
-        width: 35vw;
+        width: 45vw;
         margin-left: 37vw;
     }
 
