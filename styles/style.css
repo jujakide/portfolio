@@ -179,7 +179,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     font-size: 0.8em;
-    color: grey;
+    color: #353535;
     margin: 0 auto;
     margin-top: 1vw;
 }
