@@ -98,7 +98,8 @@ a, a:visited {
 }
 
 a:hover {
-    color: #aeaef9;
+    /* color: #aeaef9; */
+    color: #dfc9ff;
 }
 
 
