@@ -64,24 +64,24 @@ nav {
 
 
 a, a:visited {
-    color: #f01659;
+    color: #ffffd0;
 
     text-decoration: none;
 }
 
 a:hover {
-    color: #fc70a6;
+    color: #aeaef9;
 }
 
-li.nav-link a, 
+/* li.nav-link a, 
 li.nav-link a:visited 
  {
-    color: #eeeeee;
+    color: #ffffd0;
 }
 
 li.nav-link a:hover {
     color: #aeaef9;
-}
+} */
 
 
 .page {
@@ -153,21 +153,18 @@ img {
 }
 
 figcaption {
-    font-size: 0.8em;
-
     padding: 0.5em 1em 0.4em 1em;
+
+    color: #cfcfcf;
     
-    background-color: #96d2f0;
+    background-color: #0b1b70;
 
     border-radius: 0.7em;
 }
 
+
 .demo {
     display: block;
-
-    font-size: 1em;
-
-    /* text-align: center; */
 }
 
 
@@ -234,7 +231,7 @@ footer {
 
 
 /* General Styling Tablet and Up */
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 426px) {    
     .logo {
         display: inline;
     }
@@ -248,6 +245,10 @@ footer {
 
 /* Tablet Styling */
 @media screen and (min-width: 426px) and (max-width: 769px) {
+    /* body {
+        font-size: 2.3vw;
+    } */
+    
     .page {
         width: 70vw;
     }
@@ -259,7 +260,7 @@ footer {
 
 
 /* General Styling Laptop (Regular) and Up */
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 770px) { 
     body {
         font-size: 1.5vw;
     }
