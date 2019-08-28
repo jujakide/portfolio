@@ -253,6 +253,52 @@ li.nav-link h3 {
     .final {
         margin-bottom: 3vw;
     }
+
+    
+    .drop {
+        color: #ffffd0;
+    }
+
+    ul.projects {
+        display: none;
+        position: fixed;
+        z-index: 1;
+
+        background-color: #0b1b70;
+
+        margin-left: -0.6em;
+    }
+
+    .drop a {
+        display: block;
+    }
+
+    .drop ul.projects {
+        padding: 0.5em;
+        border-radius: 0.7em;
+    }
+
+    ul.projects li {
+        border-bottom: 0.1em solid #ffffd0;
+
+        margin-top: 1em;
+    }
+
+    ul.projects li:first-of-type {
+        margin-top: 0.5em;
+
+        border-top: 0.1em solid #ffffd0;
+
+        padding-top: 1em;
+    }
+
+    ul.projects li:last-of-type {
+        border-bottom: none;
+    }
+
+    .drop:hover ul.projects {
+        display: block;
+    }
 }
 
 /* Tablet Styling */
