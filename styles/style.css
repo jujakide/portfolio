@@ -90,6 +90,10 @@ nav {
     /* padding: 10px 20px; */
 }
 
+ul.projects {
+    display: none;
+}
+
 
 a, a:visited {
     color: #ffffd0;
@@ -179,8 +183,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     font-size: 0.8em;
-    color: #353535;
-    margin: 0 auto;
+    color: #404040;
+    /* margin: 0 auto; */
     margin-top: 1vw;
 }
 
@@ -234,11 +238,6 @@ li.nav-link h3 {
     .page-top {
         margin-top: 0.5em;
     }
-
-    /* .zoom:active {
-        transition: transform .2s;
-        transform: scale(1.7);
-    } */
 }
 
 
@@ -252,52 +251,6 @@ li.nav-link h3 {
     footer, 
     .final {
         margin-bottom: 3vw;
-    }
-
-    
-    .drop {
-        color: #ffffd0;
-    }
-
-    ul.projects {
-        display: none;
-        position: fixed;
-        z-index: 1;
-
-        background-color: #0b1b70;
-
-        margin-left: -0.6em;
-    }
-
-    .drop a {
-        display: block;
-    }
-
-    .drop ul.projects {
-        padding: 0.5em;
-        border-radius: 0.7em;
-    }
-
-    ul.projects li {
-        border-bottom: 0.1em solid #ffffd0;
-
-        margin-top: 1em;
-    }
-
-    ul.projects li:first-of-type {
-        margin-top: 0.5em;
-
-        border-top: 0.1em solid #ffffd0;
-
-        padding-top: 1em;
-    }
-
-    ul.projects li:last-of-type {
-        border-bottom: none;
-    }
-
-    .drop:hover ul.projects {
-        display: block;
     }
 }
 
@@ -368,6 +321,55 @@ li.nav-link h3 {
 
     .zoom {
         transition: .3s;
+    }
+
+    .drop {
+        color: #ffffd0;
+    }
+
+    ul.projects {
+        display: none;
+        position: fixed;
+        z-index: 1;
+
+        background-color: #0b1b70;
+
+        margin-left: -0.6em;
+    }
+
+    .drop a {
+        display: block;
+    }
+
+    .drop-base {
+        margin-bottom: 0;
+    }
+
+    .drop ul.projects {
+        padding: 0.5em;
+        border-radius: 0.7em;
+    }
+
+    ul.projects li {
+        border-bottom: 0.1em solid #ffffd0;
+
+        margin-top: 1em;
+    }
+
+    ul.projects li:first-of-type {
+        margin-top: 0.5em;
+
+        border-top: 0.1em solid #ffffd0;
+
+        padding-top: 1em;
+    }
+
+    ul.projects li:last-of-type {
+        border-bottom: none;
+    }
+
+    .drop:hover ul.projects {
+        display: block;
     }
 }
 
