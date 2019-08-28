@@ -33,12 +33,12 @@ body {
     display: none;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4{
     line-height: 0;
-}
+} */
 
 /* Default: 2em */
 h1,
@@ -97,9 +97,9 @@ nav {
     /* padding: 10px 20px; */
 }
 
-li.nav-link.logo > h3 {
+/* li.nav-link.logo > h3 {
     line-height: 1.17em;
-}
+} */
 
 ul.projects {
     display: none;
