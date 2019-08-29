@@ -26,7 +26,9 @@ body {
     counter-reset: index;
     /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
 
-    background-color: #76b9e5;
+    /* background-color: #76b9e5; */
+    background-color: #66a9d5;
+    /* background-color: rgba(108, 175, 219, 0.8); */
 }
 
 .logo {
@@ -117,7 +119,8 @@ a, a:visited {
 
 a:hover {
     /* color: #aeaef9; */
-    color: #dfc9ff;
+    /* color: #dfc9ff; */
+    color:rgba(235, 220, 31, 1);
 }
 
 
@@ -263,7 +266,8 @@ li.nav-link h3 {
 }
 
 li.nav-link a.active {
-    color: #dfc9ff;
+    /* color: #dfc9ff; */
+    color:rgba(235, 220, 31, 0.8);
 }
 
 
@@ -430,7 +434,9 @@ li.nav-link a.active {
     }
 
     ul.projects li a.active {
-        color: #dfc9ff;
+        /* color: #dfc9ff; */
+        color:rgba(235, 220, 31, 0.8);
+        
     }
 
     .drop:hover ul.projects {
