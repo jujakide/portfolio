@@ -4,8 +4,12 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
         <title>UCSD Global Ties: Diabeatit</title>
+
         <link rel="stylesheet" href="../styles/style.css"/>
+        <script src="../js/imageZoom.js"></script>
+
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
@@ -32,7 +36,7 @@
                             
                         <ul class="projects">
                            <li>
-                                <a href="./diabeatit.html">
+                                <a href="./diabeatit.html" class="active">
                                     Diabeatit
                                 </a>
                             </li>
@@ -67,6 +71,11 @@
                     <li class="nav-link"><a href="../writing.html">Writing</a></li>
                 </nav>
         </header>
+
+        <!-- Container for showing image enlargement -->
+        <div id="picBox">
+            <div id="picBox-img"></div>
+        </div>
         
         <div class="page">
             <main>

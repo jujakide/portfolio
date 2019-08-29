@@ -173,6 +173,49 @@ img {
     border-radius: 1em;
 }
 
+/* imageZoom-related CSS 
+   code from: code-boxx.com/image-zoom-css-javascript/
+*/
+.zoom {
+    cursor: pointer;
+}
+
+#picBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 999;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.4s;
+}
+
+#picBox.show {
+    visibility: visible;
+    opacity: 1;
+    overflow: scroll;
+}
+
+#picBox-img {
+    text-align: center;
+    /* height: 50vh; */
+    height: 50vh;
+}
+
 figcaption {
     padding: 0.5em 1em 0.4em 1em;
 
@@ -217,6 +260,10 @@ li.nav-link,
 nav li,
 li.nav-link h3 {
     margin-bottom: 0;
+}
+
+li.nav-link a.active {
+    color: #dfc9ff;
 }
 
 
@@ -266,6 +313,14 @@ li.nav-link h3 {
     .final {
         margin-bottom: 3vw;
     }
+
+    #picBox-img {
+        max-width: auto;
+        max-height: 100%;
+        
+        /* max-width: 60vw; */
+        /* max-height: 30vw; */
+    }
 }
 
 /* Tablet Styling */
@@ -309,7 +364,7 @@ li.nav-link h3 {
     }
 
     .page-top {
-        margin-top: 0.7em;
+        margin-top: 1em;
     }
 
     .page {
@@ -323,15 +378,10 @@ li.nav-link h3 {
         margin-bottom: 3vw;
     }
 
-    .zoom:hover {
-        transition: transform .2s;
-        transform: scale(1.3);
-        /* border: 0.1em solid #ffeab0; */
-    }
-
-    .zoom {
-        transition: .3s;
-    }
+    /* #picBox-img {
+        max-width: auto;
+        max-height: 40vw;
+    } */
 
 
     .drop {
@@ -377,6 +427,10 @@ li.nav-link h3 {
 
     ul.projects li:last-of-type {
         border-bottom: none;
+    }
+
+    ul.projects li a.active {
+        color: #dfc9ff;
     }
 
     .drop:hover ul.projects {

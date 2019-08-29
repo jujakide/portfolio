@@ -4,8 +4,12 @@
     <head>
          <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
         <title>Come Together</title>
+
         <link rel="stylesheet" href="../styles/style.css"/>
+        <script src="../js/imageZoom.js"></script>
+        
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
@@ -56,7 +60,7 @@
                             </li>
         
                             <li>
-                                <a href="./come_together.html">
+                                <a href="./come_together.html" class="active">
                                     Come Together
                                 </a>
                             </li>
@@ -67,7 +71,12 @@
                     <li class="nav-link"><a href="../writing.html">Writing</a></li>
                 </nav>
         </header>
-        
+
+        <!-- Container for showing image enlargement -->
+        <div id="picBox">
+            <div id="picBox-img"></div>
+        </div>
+
         <div class="page">
             <main>
                 <h1 class="page-top">Come Together</h1>

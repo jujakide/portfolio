@@ -4,8 +4,12 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        
         <title>Power Trip UCSD</title>
+
         <link rel="stylesheet" href="../styles/style.css"/>
+        <script src="../js/imageZoom.js"></script>
+
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
@@ -38,7 +42,7 @@
                             </li>
         
                             <li>
-                                <a href="./power-trip_ucsd.html">
+                                <a href="./power-trip_ucsd.html" class="active">
                                     Power Trip UCSD
                                 </a>
                             </li>
@@ -68,6 +72,11 @@
                 </nav>
         </header>
         
+        <!-- Container for showing image enlargement -->
+        <div id="picBox">
+            <div id="picBox-img"></div>
+        </div>
+
         <div class="page">
             <main>
                 <h1 class="page-top">Power Trip UCSD</h1>
@@ -207,7 +216,11 @@
                 </p>
 
                 <figure>
-                    <img src="../images/power-pics/tree.PNG" alt="Twine tree screenshot" class="zoom"/>
+                    <img 
+                        src="../images/power-pics/tree.PNG" 
+                        alt="Twine tree screenshot" 
+                        class="zoom"
+                    />
 
                     <figcaption>
                         An overview of the game's branching storyline structure.
@@ -233,7 +246,10 @@
                 </figure>
 
                 <figure>
-                    <img src="../images/power-pics/stylesheet.PNG" alt="Twine stylesheet" class="zoom"/>
+                    <img 
+                        src="../images/power-pics/stylesheet.PNG" alt="Twine stylesheet" 
+                        class="zoom"
+                    />
 
                     <figcaption>
                         The game UI's CSS.
