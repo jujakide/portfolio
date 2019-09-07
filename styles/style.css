@@ -39,6 +39,7 @@ body {
 p,
 a,
 img,
+video,
 figure,
 li, 
 .below-link,
@@ -179,7 +180,7 @@ figure {
     margin: 1.5vw 0;
 }
 
-img {
+img, video {
     width: 100%;
     display: block;
     margin-left: auto;
