@@ -26,7 +26,10 @@ body {
     counter-reset: index;
     /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
 
-    background-color: #66a9d5;
+    /* background-color: #66a9d5; */
+    background-color: #7acaff;
+    /* background-color: #b5e2ff; */
+    /* background-color: #d9f0ff; */
     /* background-color: rgba(108, 175, 219, 0.8); */
 }
 
