@@ -139,6 +139,14 @@ a:hover {
     color:rgba(235, 220, 31, 1);
 }
 
+::selection {
+    background-color: #66a9d5;
+}
+
+::-moz-selection {
+    background-color: #66a9d5;
+}
+
 
 .page {
     display: flex;
