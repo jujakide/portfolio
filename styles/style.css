@@ -26,11 +26,7 @@ body {
     counter-reset: index;
     /* Fix widows + orphans?; leave off unless you want to include JS (maybe later tho) */
 
-    /* background-color: #66a9d5; */
-    background-color: #7acaff;
-    /* background-color: #b5e2ff; */
-    /* background-color: #d9f0ff; */
-    /* background-color: rgba(108, 175, 219, 0.8); */
+    background-color: #fff;
 }
 
 .logo {
@@ -60,7 +56,8 @@ section,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     margin-bottom: 1.35em;
     /* line-height: 0.675em; */
 }
@@ -100,15 +97,10 @@ nav {
     width: 100%;
     height: auto;
 
-    background-color: #0b1b70;
-
+    background-color: #d9f0ff;
+    
     padding: 1.5vw 3vw;
-    /* padding: 10px 20px; */
 }
-
-/* li.nav-link.logo > h3 {
-    line-height: 1.17em;
-} */
 
 
 p {
@@ -130,23 +122,21 @@ ul.projects {
 
 
 a, a:visited {
-    color: #ffffd0;
+    color: #375062;
 
     text-decoration: none;
 }
 
-a:hover {
-    /* color: #aeaef9; */
-    /* color: #dfc9ff; */
-    color:rgba(235, 220, 31, 1);
+a:hover { 
+    color: #A3B4BF;
 }
 
 ::selection {
-    background-color: #66a9d5;
+    background-color: #8CD1FF;
 }
 
 ::-moz-selection {
-    background-color: #66a9d5;
+    background-color: #8CD1FF;
 }
 
 
@@ -247,10 +237,8 @@ img, video {
 
 figcaption {
     padding: 0.5em 1em 0.4em 1em;
-
-    color: #cfcfcf;
     
-    background-color: #0b1b70;
+    background-color: #d9f0ff;
 
     border-radius: 0.7em;
 }
@@ -292,8 +280,7 @@ li.nav-link h3 {
 }
 
 li.nav-link a.active {
-    /* color: #dfc9ff; */
-    color:rgba(235, 220, 31, 0.6);
+    color:#FFC0BF;
 }
 
 
@@ -302,9 +289,10 @@ li.nav-link a.active {
 .contact-links {
     text-align: center;
 
-    padding: 0.5em 0 0.4em 1em;
+    /* padding: 0.5em 0 0.4em 1em; */
+    padding: 0.5em 0 0.1em 0;
     
-    background-color: #0b1b70;
+    background-color: #d9f0ff;
 
     border-radius: 0.7em;
 }
@@ -395,11 +383,6 @@ li.nav-link a.active {
         margin-bottom: 3vw;
     }
 
-    /* #picBox-img {
-        max-width: auto;
-        max-height: 40vw;
-    } */
-
 
     .drop {
         color: #ffffd0;
@@ -410,7 +393,7 @@ li.nav-link a.active {
         position: fixed;
         z-index: 1;
 
-        background-color: #0b1b70;
+        background-color: #d9f0ff;
 
         margin-left: -0.6em;
     }
@@ -429,15 +412,11 @@ li.nav-link a.active {
     }
 
     ul.projects li {
-        border-bottom: 0.1em solid #ffffd0;
-
         margin-top: 1em;
     }
 
     ul.projects li:first-of-type {
         margin-top: 0.5em;
-
-        border-top: 0.1em solid #ffffd0;
 
         padding-top: 1em;
     }
@@ -447,8 +426,7 @@ li.nav-link a.active {
     }
 
     ul.projects li a.active {
-        /* color: #dfc9ff; */
-        color:rgba(235, 220, 31, 0.8);
+        color:#FFC0BF;
         
     }
 
@@ -475,7 +453,7 @@ li.nav-link a.active {
  /* Laptop Large Styling */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     nav {
-        width: 15vw;
+        width: 20vw;
 
         padding-left: 4vw;
         padding-top: 4vw;
