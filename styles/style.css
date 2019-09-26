@@ -124,7 +124,7 @@ ul.projects {
 a, a:visited {
     color: #375062;
 
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover { 
@@ -137,6 +137,10 @@ a:hover {
 
 ::-moz-selection {
     background-color: #8CD1FF;
+}
+
+nav > li > a, nav > li > h3 > a {
+    text-decoration: none;
 }
 
 
@@ -413,6 +417,10 @@ li.nav-link a.active {
 
     ul.projects li {
         margin-top: 1em;
+    }
+
+    ul.projects li a {
+        text-decoration: none;
     }
 
     ul.projects li:first-of-type {
