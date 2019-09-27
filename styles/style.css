@@ -58,7 +58,8 @@ h2,
 h3,
 h4,
 h5 {
-    margin-bottom: 1.35em;
+    /* margin-bottom: 1.35em; */
+    margin-bottom: 0.938em;
     /* line-height: 0.675em; */
 }
 
