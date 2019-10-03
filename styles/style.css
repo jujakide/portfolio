@@ -155,7 +155,8 @@ nav > li > a, nav > li > h3 > a {
 }
 
 li {
-    list-style: none;
+    /* list-style: none; */
+    margin-left: 1em;
 }
 
 .below-link {
@@ -253,9 +254,9 @@ figcaption a {
 }
 
 
-.demo {
-    display: block;
-}
+/* .demo { */
+    /* display: block; */
+/* } */
 
 
 footer {
@@ -282,6 +283,8 @@ li.nav-link,
 nav li,
 li.nav-link h3 {
     margin-bottom: 0;
+    list-style: none;
+    margin-left: 0;
 }
 
 li.nav-link a.active {
