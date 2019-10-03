@@ -303,6 +303,8 @@ li.nav-link a.active {
     background-color: #d9f0ff;
 
     border-radius: 0.7em;
+
+    list-style: none;
 }
 
 .contact-links li {
