@@ -394,7 +394,7 @@ li.nav-link a.active {
     }
 
 
-    .drop {
+    /* .drop {
         color: #ffffd0;
     }
 
@@ -446,7 +446,7 @@ li.nav-link a.active {
 
     .drop:hover ul.projects {
         display: block;
-    }
+    } */
 }
 
 /* Laptop Styling */
