@@ -288,7 +288,9 @@ li.nav-link h3 {
 }
 
 li.nav-link a.active {
-    color:#FFC0BF;
+    /* color:#FFC0BF; */
+    color: #D10300;
+    /* color: #800200; */
 }
 
 
