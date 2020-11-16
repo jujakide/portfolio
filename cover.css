@@ -29,11 +29,10 @@ a:focus {
 
 /* Custom default button */
 .btn-outline-primary {
-  color: #03009E;
+  color: #03009E !important;
   text-shadow: none; /* Prevent inheritance from `body` */
-  font-weight: 300;
-  background-color: #fafafa;
-  border: 0.15rem solid #03009E;
+  background-color: #fafafa !important;
+  border: 0.15rem solid #03009E !important;
 }
 
 .btn-outline-primary:hover {
