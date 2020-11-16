@@ -37,9 +37,9 @@ a:focus {
 }
 
 .btn-outline-primary:hover {
-  color: #03009E;
-  background-color: #FFB7E2;
-  border: 0.15rem solid #03009E;
+  color: #03009E !important;
+  background-color: #FFB7E2 !important;
+  border: 0.15rem solid #03009E !important;
 }
 
 .btn-outline-primary:focus {
