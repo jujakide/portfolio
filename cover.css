@@ -1,0 +1,87 @@
+/*
+ * Globals
+ */
+ * {
+  font-family: 'Lato', sans-serif;
+ }
+
+ /* Test */
+ .linkedin:focus {
+   color: #03009E;
+ }
+
+/* Links */
+a {
+  color: #03009E;
+  border-radius: 2px;
+}
+
+a:hover { 
+  text-decoration: underline;
+  background-color: #FFB7E2;
+}
+
+a:focus {
+  color: #fafafa;
+  text-decoration: underline;
+  background-color: #fc44b3;
+}
+
+/* Custom default button */
+.btn-outline-primary {
+  color: #03009E;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  font-weight: 300;
+  background-color: #fafafa;
+  border: 0.15rem solid #03009E;
+}
+
+.btn-outline-primary:hover {
+  color: #03009E;
+  background-color: #FFB7E2;
+  border: 0.15rem solid #03009E;
+}
+
+.btn-outline-primary:focus {
+  color: #fafafa !important;
+  background-color: #fc44b3 !important;
+  border: 0.15rem solid #fafafa !important;
+  box-shadow: 0 0 0 .2rem rgba(252, 68, 179, 0.5) !important;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #03009E;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
