@@ -14,16 +14,21 @@
 a {
   color: #03009E;
   border-radius: 2px;
+  text-decoration: underline;
+}
+
+a.btn {
+  text-decoration: none;
 }
 
 a:hover { 
-  text-decoration: underline;
+  text-decoration: none;
   background-color: #FFB7E2;
 }
 
 a:focus {
   color: #fafafa;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: #fc44b3;
 }
 
