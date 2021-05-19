@@ -7,12 +7,12 @@
 
  /* Test */
  .linkedin:focus {
-   color: #03009E;
+   color: #010043;
  }
 
 /* Links */
 a {
-  color: #03009E;
+  color: #010043;
   border-radius: 2px;
   text-decoration: underline;
 }
@@ -34,16 +34,16 @@ a:focus {
 
 /* Custom default button */
 .btn-outline-primary {
-  color: #03009E !important;
+  color: #010043 !important;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fafafa !important;
-  border: 0.15rem solid #03009E !important;
+  border: 0.15rem solid #010043 !important;
 }
 
 .btn-outline-primary:hover {
-  color: #03009E !important;
+  color: #010043 !important;
   background-color: #FFB7E2 !important;
-  border: 0.15rem solid #03009E !important;
+  border: 0.15rem solid #010043 !important;
 }
 
 .btn-outline-primary:focus {
@@ -58,7 +58,7 @@ a:focus {
  */
  .tooltip-inner {
   color: #fafafa;
-  background-color: #03009E;
+  background-color: #010043;
 }
 
 
@@ -75,7 +75,7 @@ body {
 body {
   display: -ms-flexbox;
   display: flex;
-  color: #03009E;
+  color: #010043;
 }
 
 .cover-container {
